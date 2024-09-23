@@ -16,7 +16,10 @@
         "polyfills": ["zone.js"],
         "tsConfig": "apps/alfabit/tsconfig.app.json",
         "assets": ["apps/alfabit/src/favicon.ico", "apps/alfabit/src/assets"],
-        "styles": ["apps/alfabit/src/styles.css"],
+        "styles": ["apps/alfabit/src/styles.css", "libs/ui/global.css"],
+        "stylePreprocessorOptions": {
+          "includePaths": ["libs/ui/global.css"]
+        },
         "scripts": []
       },
       "configurations": {

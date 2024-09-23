@@ -55,7 +55,11 @@
         "configDir": "libs/storybook-host/.storybook",
         "browserTarget": "storybook-host:build-storybook",
         "compodoc": true,
-        "compodocArgs": ["-e", "json", "-d", "libs/storybook-host"]
+        "compodocArgs": ["-e", "json", "-d", "libs/storybook-host"],
+        "styles": ["libs/ui/global.css"],
+        "stylePreprocessorOptions": {
+          "includePaths": ["libs/ui/global.css"]
+        }
       },
       "configurations": {
         "ci": {
